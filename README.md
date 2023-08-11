@@ -1,1 +1,1 @@
-# jsproject
+A feladat egy weblap létrehozása volt. Ami élőben mutatja az időt, a háttérkép a napszaknak megfelelően változik és to-do listaként is működik. Fel lehet venni teendőket, amiket ki lehet húzni elvégzésük után.
