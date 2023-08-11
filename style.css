@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#time{
+    font-size: 80px;
+}
+#welcome{
+    font-size: 40px;
+}
+
+.form{
+    width: 60%;
+    text-align: center;
+    margin: 20px 0;
+}
+.form input{
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    opacity: 0.8;
+}
+.form input:focus{
+    outline: none;
+    opacity: 1;
+}
+.form button{
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#todos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+#todos input{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+#todos span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.morning{
+    background-image: url(images/morning.jpg);
+}
+.afternoon{
+    background-image: url(images/afternoon.jpg);
+}
+.night{
+    background-image: url(/images/night.jpg);
+}
+.nightInput{
+    background-color: black;
+    color: white;
+}
+.nightBtn{
+    background-color: rgb(102, 102, 202);
+    color: white;
+}
+.done{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+
+@media (max-width: 550px){
+    .form{
+        width: 90%;
+    }
+    #todos{
+        width: 80%;
+    }
+}
+@media (max-width: 330px){
+    #time{
+        font-size: 50px;
+    }
+    #welcome{
+        font-size: 30px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form button{
+        width: 40%;
+    }
+}
